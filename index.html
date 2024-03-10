@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily ToDo website</title>
+    <link rel="stylesheet" type="text/css" href="/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+<header style="background-color: aquamarine;">
+    <h1 class="uk-heading-medium uk-text-center uk-padding-small uk-margin-remove"><span>Daily ToDo</span></h1>
+</header>
+<div class="uk-container uk-container-expand" style="background-color: antiquewhite;">
+    <div class="uk-section uk-padding-remove-vertical" id="addContainer">
+        <div class="uk-container">
+            <form class="google-form uk-flex">
+                <div class="new-item uk-flex uk-width-xlarge uk-margin-auto uk-margin-medium uk-margin-medium-top">
+                    <input type="text"
+                           placeholder="新增小目標"
+                           class="new-input uk-input uk-text-large uk-text-bolder">
+                    <button type="submit" class="uk-button btn-add">＋</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="uk-section uk-padding-remove-vertical" id="todoContainer">
+        <div class="uk-container" style="background-color: azure;">
+            <div class="uk-width-xlarge uk-margin-auto">
+                <div class="todo-list-container">
+                    <ul class="todo-list-tab uk-child-width-expand" uk-tab>
+                        <li><a href="#">所有項目</a></li>
+                        <li><a href="#">未完成</a></li>
+                        <li><a href="#">已完成</a></li>
+                    </ul>
+
+                    <ul class="uk-switcher">
+                        <li>
+                            <div class="uk-overflow-auto">
+                                <table class="uk-table uk-table-hover uk-table-middle">
+                                    <tbody class="todo-list">
+                                    <tr>
+                                        <td class="uk-table-shrink"><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
+                                        <td class="uk-table-link uk-table-expand">
+                                            <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                        </td>
+                                        <td class="uk-table-shrink"><button class="uk-button uk-button-default" type="button">X</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-table-shrink"><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
+                                        <td class="uk-table-link uk-table-expand">
+                                            <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                        </td>
+                                        <td class="uk-table-shrink"><button class="uk-button uk-button-default" type="button">X</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-table-shrink"><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
+                                        <td class="uk-table-link uk-table-expand">
+                                            <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                        </td>
+                                        <td class="uk-table-shrink"><button class="uk-button uk-button-default" type="button">X</button></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>閱讀IT新聞</li>
+                        <li>當個碼農</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="background-color: aquamarine;">
+    <div class="uk-section uk-text-center uk-padding-small">
+        <div class="uk-container">
+            ea103t41@gmail.com
+        </div>
+    </div>
+</footer>
+</body>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/js/uikit.min.js"></script>
+<script src="/js/main.js"></script>
+</html>
